@@ -48,7 +48,6 @@ class MainActivity : AppCompatActivity(), onItemClickListener{
 
     override fun onItemClick(position: Int) {
         val intent = Intent(this@MainActivity,ProfileActivity::class.java)
-                    intent.putExtra("firstname",)
 
 
     // Toast.makeText(this, "Item $position clicked", Toast.LENGTH_SHORT).show()
