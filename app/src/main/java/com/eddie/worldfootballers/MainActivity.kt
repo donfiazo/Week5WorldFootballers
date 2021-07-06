@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity(), onItemClickListener{
 
         val footballers: List<Footballer> = listOf(
 
+            Footballer(R.drawable.daniel_akpeyi, "Daniel", "Akpeyi"),
             Footballer(R.drawable.alexander_arnold, "Alexander", "Arnold"),
             Footballer(R.drawable.claudio_marchisio, "Claudio", "Marchisio"),
             Footballer(R.drawable.angel_maria, "Angel", "Di Maria"),
@@ -47,11 +48,7 @@ class MainActivity : AppCompatActivity(), onItemClickListener{
     }
 
     override fun onItemClick(position: Int) {
-        val intent = Intent(this@MainActivity,ProfileActivity::class.java)
-                    intent.putExtra("firstname",)
-
-
-    // Toast.makeText(this, "Item $position clicked", Toast.LENGTH_SHORT).show()
+      Toast.makeText(this, "Item $position clicked", Toast.LENGTH_SHORT).show()
     }
 
     }
